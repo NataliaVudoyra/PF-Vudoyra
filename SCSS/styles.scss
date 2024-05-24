@@ -1,0 +1,235 @@
+$text-font: "Lexend", sans-serif auto normal;
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$color-grey: #333 !important;
+$color-orange: #E5530E !important;
+
+@mixin flexible-spacing($margin: 0, $padding: 0) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin grid($display, $columns){
+    display: $display;
+    grid-template-columns: $columns;
+}
+
+@mixin text-styles {
+    font: $text-font;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: justify;
+    margin: 20px;
+}
+
+body {
+    @include flexible-spacing(0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+%card-styles {
+    margin: auto;
+    box-shadow: $box-shadow;
+}
+
+.card {
+    @extend %card-styles;
+}
+
+.parragraph{
+    @include text-styles;
+}
+
+h4{
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+main {
+    flex: 1;
+  }
+
+.poster {
+    @extend %card-styles;
+    border-radius: 10px !important;
+    border: rgba(0, 0, 0, 0) !important;
+}
+
+.logo {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-logo{
+    width: 200px;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+.content{
+  margin-bottom: 60px;
+}
+
+.form{
+  margin: 50px;;
+}
+
+.form-control{
+    border-color: $color-orange;
+}
+
+.game-card{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+nav {
+    height: 80px;
+    ul {
+        @include flexible-spacing(0);
+        li {
+            display: inline-block;
+            margin-left: 20px;
+            a {
+                color: #fff !important;
+                text-decoration: none;
+                font-size: 18px;
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+        }
+    }
+}
+
+
+.navbar{
+    background-color: $color-grey;
+    z-index: 10;
+}
+
+.nav-item{
+    background-color: $color-grey;
+}
+
+footer {
+    background-color: $color-grey;
+    padding: 20px 0;
+    color: #fff;
+    justify-content: space-between;
+    margin-top: auto;
+    height: 10%;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        img {
+            height: 50px;
+            margin-left: 20px;
+        }
+    }
+
+    .social-media {
+        margin-top: 20px;
+        gap: 10px;
+        text-align: right;
+        a {
+            display: inline-block;
+            margin: 0 10px;
+            img {
+                height: 30px;
+            }
+        }
+    }
+}
+
+.footer-container {
+    padding: 20px 0; 
+  }
+  
+.footer-logo img {
+    height: 20px; 
+    margin-right: 10px; 
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+}
+ 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.news{
+    @include grid(grid, 3);
+}
+
+.bg-color{
+    background-color: $color-grey;
+}
+
+.white-text{
+    color: white !important;
+}
+
+.lexend {
+  font: $text-font;
+}
+
+.btn-color{
+    background-color: $color-orange;
+    color: #fff !important;
+}
+
+.black-bg{
+    background-color: #040C17;
+}
+
+.btn-main{
+    width: 20% !important;
+}
+
+input::selection, textarea::selection {
+    background-color: #4f9912;
+    color: #fff;
+  }
+
+.home {
+    @include grid(grid, 1fr 1fr);
+    gap: 20px;
+  }
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description{
+    margin: 20px;
+    font-size: 180%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    padding: 10%;
+}
+
+.container-full{
+    height: 100vh;
+}

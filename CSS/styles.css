@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.poster, .card {
+  margin: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.parragraph {
+  font: "Lexend", sans-serif auto normal;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: justify;
+  margin: 20px;
+}
+
+h4 {
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+.poster {
+  border-radius: 10px !important;
+  border: rgba(0, 0, 0, 0) !important;
+}
+
+.logo {
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-logo {
+  width: 200px;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+.content {
+  margin-bottom: 60px;
+}
+
+.form {
+  margin: 50px;
+}
+
+.form-control {
+  border-color: #E5530E !important;
+}
+
+.game-card {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+nav {
+  height: 80px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: #E5530E !important;
+}
+
+.navbar {
+  background-color: #333 !important;
+  z-index: 10;
+}
+
+.nav-item {
+  background-color: #333 !important;
+}
+
+footer {
+  background-color: #333 !important;
+  padding: 20px 0;
+  color: #fff;
+  justify-content: space-between;
+  margin-top: auto;
+  height: 10%;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+footer .logo img {
+  height: 50px;
+  margin-left: 20px;
+}
+footer .social-media {
+  margin-top: 20px;
+  gap: 10px;
+  text-align: right;
+}
+footer .social-media a {
+  display: inline-block;
+  margin: 0 10px;
+}
+footer .social-media a img {
+  height: 30px;
+}
+
+.footer-container {
+  padding: 20px 0;
+}
+
+.footer-logo img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 3;
+}
+
+.bg-color {
+  background-color: #333 !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.lexend {
+  font: "Lexend", sans-serif auto normal;
+}
+
+.btn-color {
+  background-color: #E5530E !important;
+  color: #fff !important;
+}
+
+.black-bg {
+  background-color: #040C17;
+}
+
+.btn-main {
+  width: 20% !important;
+}
+
+input::selection, textarea::selection {
+  background-color: #4f9912;
+  color: #fff;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description {
+  margin: 20px;
+  font-size: 180%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  padding: 10%;
+}
+
+.container-full {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=styles.css.map */
